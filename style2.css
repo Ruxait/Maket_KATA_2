@@ -8,22 +8,25 @@
 		url('fonts/ttlakes-medium.svg#ttlakes-medium') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-.body {
+html, body {
   font-family: "TTLakes-Medium";
-  max-width: 320px;
+  width: 320px;
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.body--layout {
+.sidebar--layout {
   display: grid;
   grid-template-areas: "header aside";
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
   margin-right: auto;
-  height: 100%;
+  max-width: 320px;
+  height: 100vh
 }
 
-.body--shadow {
+.sidebar--shadow {
   box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
               -2px 0 4px 0 rgba(69, 79, 126, 0.02);
 }
@@ -36,7 +39,6 @@
   display: flex;
   flex-direction: column;
   padding-left: 10px;
-  height: 100%;
 }
 
 .menu-layout {
