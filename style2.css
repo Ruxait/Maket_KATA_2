@@ -23,6 +23,11 @@
   height: 100%;
 }
 
+.body--shadow {
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+              -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
 .header-menu {
   grid-area: header;
 }
@@ -48,9 +53,19 @@
   margin-bottom: 30px;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: #41f6d7;
+}
+
 .services--menu__elem--mod {
   position: relative;
   color: #7E7E82;
+  cursor: pointer;
 }
 
 .services--menu__elem--mod::before {
